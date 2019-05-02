@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>instagramclone</title>
+</head>
+<body>
+<h1>Django image uploading</h1>
+<ul>
+  {% for i in post1.all %}
+    <h2>{{ i.title }}</h2>
+    <img src="{{ i.image.url}}" alt="{{ i.title }}" height="300" width="300">
+  {% endfor %}
+</ul>
+</body>
+</html>

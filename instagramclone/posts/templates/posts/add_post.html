@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- templates/post.html -->
+<h1>Create Post Page</h1>
+<form method='POST' enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit" value='Save'>Submit New Post</button>
+</form>
+
+</body>
+</html>
